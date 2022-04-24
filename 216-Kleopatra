@@ -1,0 +1,27 @@
+import selenium
+import csv
+import pandas as pd
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+PATH = "C:\Program Files (x86)\chromedriver.exe"
+driver = webdriver.Chrome(PATH)
+website_list = ["https://www.apartments.com/180-water-st-new-york-ny/htl8ej0/", "https://www.apartments.com/20-broad-street-new-york-ny/lvvpj7e/"]
+
+for website in website_list:
+driver.get(website)
+
+# PARSE THE WEBSITE
+driver.implicitly_wait(5)
+
+Apartment_Name = driver.find_element(By.ID, "propertyName")
+print("Apartment Name:", Apartment_Name.text)
+
+Phone_Number = driver.find_element(By.CLASS_NAME, "phoneNumber")
+print("Phone Number:", Phone_Number.text)
+
+Monthly_Rent = driver.find_element(By.CLASS_NAME, "rentInfoDetail")
+print("Monthly Rent:", Monthly_Rent.text)
+
+driver.quit()
