@@ -1,1 +1,2 @@
 # 216-Kleopatra
+216 Kleopatra is a large M-type asteroid with a mean diameter of 120 kilometers (75 miles) and is noted for its elongate bone or dumbbell shape. It was discovered on 10 April 1880 by Austrian astronomer Johann Palisa at the Austrian Naval Pola Observatory, in what is now Pula, Croatia, and was named after Cleopatra, the famous Egyptian queen. It has two small minor-planet moons which were discovered in 2008 and later named Alexhelios and Cleoselene.
